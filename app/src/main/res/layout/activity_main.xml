@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- container principal que organiza tudo na vertical -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center">
+
+    <!-- entrada de texto para a cidade do usuário -->
+    <EditText
+        android:id="@+id/cityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a sua cidade" />
+
+    <!-- botao para ativar a busca da previsão -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar" />
+
+    <!-- exibe o resultado na tela -->
+    <TextView
+        android:src="@android:drawable/ic_menu_compass"
+        android:id="@+id/weatherResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:text="Resultado aparecerá aqui"
+        android:textSize="18sp" />
+
+</LinearLayout>
